@@ -19,7 +19,7 @@ This program, `select.c`, simulates SQL's SELECT commands in a C environment. It
 
 ```bash
 ./select "SELECT [* <OR> {attributes separated by ,}] from <table_name>.txt"
-
+```
 
 ## Tech Stack
 
