@@ -20,6 +20,26 @@ This program, `select.c`, simulates SQL's SELECT commands in a C environment. It
 ```bash
 ./select "SELECT [* <OR> {attributes separated by ,}] from <table_name>.txt"
 ```
+```bash
+./select "SELECT * from officedata.txt"
+```
+```bash 
+./select "SELECT * from officedata.txt where age > 25"
+```
+# Features
+Attribute Selection: Choose specific attributes or select all (*) from the table.
+Condition Filtering: Apply conditions to filter results based on attribute values.
+Table Existence Check: Ensures that the specified table exists before attempting to execute the SELECT command.
+# Command Line Arguments
+The program takes a single command-line argument enclosed in double quotes to handle special characters effectively. The argument should follow the syntax specified above.
+
+# How to Run
+Compile the program using a C compiler.
+Run the compiled executable, providing the SELECT command in double quotes.
+```bash
+gcc select.c -o select
+./select "SELECT * from officedata.txt"
+```
 
 ## Tech Stack
 
