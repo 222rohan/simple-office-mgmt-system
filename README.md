@@ -11,6 +11,16 @@ This project implements a simple office management database system using file ha
 - **Remove User:** Deletes a user from the system, updating both the main user data file and the formatted version.
 - **View Office Portal Directory:** Displays a list of all users in the database along with some of their personal information, including user ID, username, age, and position.
 
+# SQL-like SELECT Command Simulator in C
+
+This program, `select.c`, simulates SQL's SELECT commands in a C environment. It allows users to query data from a specified table with various conditions and attributes, providing a versatile way to retrieve information. This uses command-line interface and takes arguments directly from the terminal.
+
+## Usage
+
+```bash
+./select "SELECT [* <OR> {attributes separated by ,}] from <table_name>.txt"
+
+
 ## Tech Stack
 
 - Language: C
